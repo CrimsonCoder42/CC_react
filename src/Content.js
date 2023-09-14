@@ -4,7 +4,7 @@ const Content = ({ items, handleCheck, handleDelete }) => {
 
 
   return (
-    <main>
+    <>
       {items.length ? (
         < ItemList
           items={items}
@@ -13,7 +13,7 @@ const Content = ({ items, handleCheck, handleDelete }) => {
       ) : (
         <p className="empty">No items in your list</p>
       )}
-    </main>
+    </>
   )
 }
 
