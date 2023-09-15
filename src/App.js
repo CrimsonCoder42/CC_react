@@ -20,7 +20,7 @@ function App() {
     const fetchItems = async () => {
       try{
         const res = await fetch(API_URL);
-        if (!res.ok) throw new Error('Did not receive expected response')
+        if (!res.ok) throw new Error('Did not receive the response')
         const listItems = await res.json();
         setItems(listItems);
         setFetchError(null);
